@@ -7,28 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200C223A2AAC864E00545FC1 /* totp.c in Sources */ = {isa = PBXBuildFile; fileRef = 200C22392AAC864E00545FC1 /* totp.c */; };
+		201DB5B62AB6400E00E4F5DD /* DBEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DB5B52AB6400E00E4F5DD /* DBEditorViewController.m */; };
 		204D5F2F2AA6F2FC00AE8BEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F2E2AA6F2FC00AE8BEC /* AppDelegate.m */; };
 		204D5F322AA6F2FC00AE8BEC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F312AA6F2FC00AE8BEC /* SceneDelegate.m */; };
-		204D5F352AA6F2FC00AE8BEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F342AA6F2FC00AE8BEC /* ViewController.m */; };
+		204D5F352AA6F2FC00AE8BEC /* CodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F342AA6F2FC00AE8BEC /* CodeListViewController.m */; };
 		204D5F382AA6F2FC00AE8BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204D5F362AA6F2FC00AE8BEC /* Main.storyboard */; };
 		204D5F3A2AA6F2FD00AE8BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204D5F392AA6F2FD00AE8BEC /* Assets.xcassets */; };
 		204D5F3D2AA6F2FD00AE8BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204D5F3B2AA6F2FD00AE8BEC /* LaunchScreen.storyboard */; };
 		204D5F402AA6F2FD00AE8BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F3F2AA6F2FD00AE8BEC /* main.m */; };
+		204D5F482AA6F31900AE8BEC /* keychip2.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F462AA6F31800AE8BEC /* keychip2.m */; };
+		20B844392AB59CE100A34C5B /* CodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B844382AB59CE100A34C5B /* CodeCell.m */; };
+		20B8443C2AB6169300A34C5B /* ObjTOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8443B2AB6169300A34C5B /* ObjTOTP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200C22382AAC864E00545FC1 /* totp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = totp.h; sourceTree = "<group>"; };
+		200C22392AAC864E00545FC1 /* totp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = totp.c; sourceTree = "<group>"; };
+		201DB5B42AB6400E00E4F5DD /* DBEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBEditorViewController.h; sourceTree = "<group>"; };
+		201DB5B52AB6400E00E4F5DD /* DBEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBEditorViewController.m; sourceTree = "<group>"; };
+		2040F7772AB65296007ADD7B /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = System/Library/Frameworks/VisionKit.framework; sourceTree = SDKROOT; };
+		2040F7792AB652AF007ADD7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		204D5F2A2AA6F2FC00AE8BEC /* totp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = totp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		204D5F2D2AA6F2FC00AE8BEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		204D5F2E2AA6F2FC00AE8BEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		204D5F302AA6F2FC00AE8BEC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		204D5F312AA6F2FC00AE8BEC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		204D5F332AA6F2FC00AE8BEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		204D5F342AA6F2FC00AE8BEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		204D5F332AA6F2FC00AE8BEC /* CodeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeListViewController.h; sourceTree = "<group>"; };
+		204D5F342AA6F2FC00AE8BEC /* CodeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeListViewController.m; sourceTree = "<group>"; };
 		204D5F372AA6F2FC00AE8BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		204D5F392AA6F2FD00AE8BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204D5F3C2AA6F2FD00AE8BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204D5F3E2AA6F2FD00AE8BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		204D5F3F2AA6F2FD00AE8BEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		204D5F462AA6F31800AE8BEC /* keychip2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keychip2.m; sourceTree = "<group>"; };
+		204D5F472AA6F31900AE8BEC /* keychip2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keychip2.h; sourceTree = "<group>"; };
+		20B844372AB59CE100A34C5B /* CodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeCell.h; sourceTree = "<group>"; };
+		20B844382AB59CE100A34C5B /* CodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeCell.m; sourceTree = "<group>"; };
+		20B8443A2AB6169300A34C5B /* ObjTOTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjTOTP.h; sourceTree = "<group>"; };
+		20B8443B2AB6169300A34C5B /* ObjTOTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjTOTP.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,11 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2040F7762AB65296007ADD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2040F7792AB652AF007ADD7B /* AVFoundation.framework */,
+				2040F7772AB65296007ADD7B /* VisionKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		204D5F212AA6F2FC00AE8BEC = {
 			isa = PBXGroup;
 			children = (
 				204D5F2C2AA6F2FC00AE8BEC /* totp */,
 				204D5F2B2AA6F2FC00AE8BEC /* Products */,
+				2040F7762AB65296007ADD7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,15 +90,25 @@
 			children = (
 				204D5F2D2AA6F2FC00AE8BEC /* AppDelegate.h */,
 				204D5F2E2AA6F2FC00AE8BEC /* AppDelegate.m */,
+				204D5F392AA6F2FD00AE8BEC /* Assets.xcassets */,
+				20B844372AB59CE100A34C5B /* CodeCell.h */,
+				20B844382AB59CE100A34C5B /* CodeCell.m */,
+				204D5F332AA6F2FC00AE8BEC /* CodeListViewController.h */,
+				204D5F342AA6F2FC00AE8BEC /* CodeListViewController.m */,
+				201DB5B42AB6400E00E4F5DD /* DBEditorViewController.h */,
+				201DB5B52AB6400E00E4F5DD /* DBEditorViewController.m */,
+				204D5F3E2AA6F2FD00AE8BEC /* Info.plist */,
+				204D5F472AA6F31900AE8BEC /* keychip2.h */,
+				204D5F462AA6F31800AE8BEC /* keychip2.m */,
+				204D5F3B2AA6F2FD00AE8BEC /* LaunchScreen.storyboard */,
+				204D5F3F2AA6F2FD00AE8BEC /* main.m */,
+				204D5F362AA6F2FC00AE8BEC /* Main.storyboard */,
+				20B8443A2AB6169300A34C5B /* ObjTOTP.h */,
+				20B8443B2AB6169300A34C5B /* ObjTOTP.m */,
 				204D5F302AA6F2FC00AE8BEC /* SceneDelegate.h */,
 				204D5F312AA6F2FC00AE8BEC /* SceneDelegate.m */,
-				204D5F332AA6F2FC00AE8BEC /* ViewController.h */,
-				204D5F342AA6F2FC00AE8BEC /* ViewController.m */,
-				204D5F362AA6F2FC00AE8BEC /* Main.storyboard */,
-				204D5F392AA6F2FD00AE8BEC /* Assets.xcassets */,
-				204D5F3B2AA6F2FD00AE8BEC /* LaunchScreen.storyboard */,
-				204D5F3E2AA6F2FD00AE8BEC /* Info.plist */,
-				204D5F3F2AA6F2FD00AE8BEC /* main.m */,
+				200C22392AAC864E00545FC1 /* totp.c */,
+				200C22382AAC864E00545FC1 /* totp.h */,
 			);
 			path = totp;
 			sourceTree = "<group>";
@@ -146,9 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204D5F352AA6F2FC00AE8BEC /* ViewController.m in Sources */,
+				204D5F482AA6F31900AE8BEC /* keychip2.m in Sources */,
+				204D5F352AA6F2FC00AE8BEC /* CodeListViewController.m in Sources */,
 				204D5F2F2AA6F2FC00AE8BEC /* AppDelegate.m in Sources */,
 				204D5F402AA6F2FD00AE8BEC /* main.m in Sources */,
+				201DB5B62AB6400E00E4F5DD /* DBEditorViewController.m in Sources */,
+				20B844392AB59CE100A34C5B /* CodeCell.m in Sources */,
+				200C223A2AAC864E00545FC1 /* totp.c in Sources */,
+				20B8443C2AB6169300A34C5B /* ObjTOTP.m in Sources */,
 				204D5F322AA6F2FC00AE8BEC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
