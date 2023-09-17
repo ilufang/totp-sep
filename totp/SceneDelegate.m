@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "CodeListViewController.h"
 
 @interface SceneDelegate ()
 
@@ -20,6 +21,12 @@
 	// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 }
 
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+	for (UIOpenURLContext *ctx in URLContexts) {
+		NSString *url = ctx.URL.absoluteString;
+		[CodeListViewController appendOTPURL:url];
+	}
+}
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
 	// Called as the scene is being released by the system.

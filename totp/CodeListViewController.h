@@ -9,7 +9,9 @@
 
 @interface CodeListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic) NSString *db;
+@property (strong, nonatomic) NSString *db;
+
++ (void)appendOTPURL: (NSString *)url;
 
 @end
 

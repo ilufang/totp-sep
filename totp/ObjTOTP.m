@@ -86,7 +86,9 @@ NSString *_url;
 	_url = nil;
 	_urlDirty = NO;
 	NSURLComponents *url = [NSURLComponents componentsWithString:urlstr];
-	if (!url || strcasecmp(url.scheme.UTF8String, "otpauth") || strcasecmp(url.host.UTF8String, "totp")) {
+	if (!url || !url.scheme || !url.host || !url.path || !url.queryItems ||
+		strcasecmp(url.scheme.UTF8String, "otpauth") ||
+		strcasecmp(url.host.UTF8String, "totp")) {
 		return;
 	}
 	_name = [url.path substringFromIndex:1];

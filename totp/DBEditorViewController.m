@@ -22,10 +22,6 @@
 	_editor.text = _host.db;
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-	_host.db = _editor.text;
-}
-
 - (NSString *)db {
 	return _editor.text;
 }
@@ -35,6 +31,7 @@
 }
 
 - (IBAction)dismissClicked {
+	_host.db = _editor.text;
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
