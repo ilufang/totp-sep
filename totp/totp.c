@@ -23,7 +23,7 @@ static int base32_decode(const char *base32, uint8_t *ret) {
 	uint8_t *wptr = ret;
 	uint16_t bitbuf = 0;
 	int buflen = 0;
-	for(int i = 0; i < base32[i]; i++) {
+	for(int i = 0; base32[i]; i++) {
 		char c = base32[i];
 		if (c >= 'a' && c <= 'z') {
 			c -= 'a';
@@ -40,7 +40,7 @@ static int base32_decode(const char *base32, uint8_t *ret) {
 		}
 	}
 	if (buflen != 0) {
-		bitbuf &= ((~0) << buflen);
+		bitbuf &= ~((~0) << buflen);
 		if (bitbuf)
 			return -1;
 	}

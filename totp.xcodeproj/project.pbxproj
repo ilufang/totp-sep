@@ -17,8 +17,10 @@
 		204D5F3D2AA6F2FD00AE8BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204D5F3B2AA6F2FD00AE8BEC /* LaunchScreen.storyboard */; };
 		204D5F402AA6F2FD00AE8BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F3F2AA6F2FD00AE8BEC /* main.m */; };
 		204D5F482AA6F31900AE8BEC /* keychip2.m in Sources */ = {isa = PBXBuildFile; fileRef = 204D5F462AA6F31800AE8BEC /* keychip2.m */; };
+		20566A892AB8355500417BA7 /* TOTPEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20566A882AB8355500417BA7 /* TOTPEditorViewController.m */; };
 		20B844392AB59CE100A34C5B /* CodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B844382AB59CE100A34C5B /* CodeCell.m */; };
 		20B8443C2AB6169300A34C5B /* ObjTOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8443B2AB6169300A34C5B /* ObjTOTP.m */; };
+		20F988F62B1EF6360031FA53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2040F7792AB652AF007ADD7B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		204D5F3F2AA6F2FD00AE8BEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		204D5F462AA6F31800AE8BEC /* keychip2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keychip2.m; sourceTree = "<group>"; };
 		204D5F472AA6F31900AE8BEC /* keychip2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keychip2.h; sourceTree = "<group>"; };
+		20566A872AB8355500417BA7 /* TOTPEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTPEditorViewController.h; sourceTree = "<group>"; };
+		20566A882AB8355500417BA7 /* TOTPEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTPEditorViewController.m; sourceTree = "<group>"; };
 		20B844372AB59CE100A34C5B /* CodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeCell.h; sourceTree = "<group>"; };
 		20B844382AB59CE100A34C5B /* CodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeCell.m; sourceTree = "<group>"; };
 		20B8443A2AB6169300A34C5B /* ObjTOTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjTOTP.h; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F988F62B1EF6360031FA53 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,8 @@
 				204D5F312AA6F2FC00AE8BEC /* SceneDelegate.m */,
 				200C22392AAC864E00545FC1 /* totp.c */,
 				200C22382AAC864E00545FC1 /* totp.h */,
+				20566A872AB8355500417BA7 /* TOTPEditorViewController.h */,
+				20566A882AB8355500417BA7 /* TOTPEditorViewController.m */,
 			);
 			path = totp;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				20B844392AB59CE100A34C5B /* CodeCell.m in Sources */,
 				200C223A2AAC864E00545FC1 /* totp.c in Sources */,
 				20B8443C2AB6169300A34C5B /* ObjTOTP.m in Sources */,
+				20566A892AB8355500417BA7 /* TOTPEditorViewController.m in Sources */,
 				204D5F322AA6F2FC00AE8BEC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +346,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = totp/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan TOTP QR Code";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "User Authentication by SEP-backed Key";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,12 +378,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = totp/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan TOTP QR Code";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "User Authentication by SEP-backed Key";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

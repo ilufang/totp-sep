@@ -12,13 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ObjTOTP : NSObject
 
-@property (nonatomic) NSString *key;
-@property (nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *key;
+@property (strong, nonatomic) NSString *name;
 @property (nonatomic) short period;
 @property (nonatomic) short digits;
 @property (nonatomic) const char *algorithm;
 
-@property (nonatomic) NSString *url;
+@property (strong, nonatomic) NSString *url;
 
 + (ObjTOTP *) TOTPWithURLString: (NSString *)urlstr;
 

@@ -9,17 +9,22 @@
 
 #include "totp.h"
 
+@interface ObjTOTP ()
+
+@property (nonatomic) BOOL urlDirty;
+
+@end
+
 @implementation ObjTOTP
 
-BOOL _urlDirty = NO;
 totp_params_t _params = {
 	.period = 30,
 	.digits = 6,
 	.algorithm = "SHA1"
 };
-NSString *_url;
 @synthesize name = _name;
 @synthesize key = _key;
+@synthesize url = _url;
 
 + (nonnull ObjTOTP *)TOTPWithURLString:(nonnull NSString *)urlstr {
 	ObjTOTP *ret = [[ObjTOTP alloc] init];
@@ -130,5 +135,8 @@ NSString *_url;
 	return totp_gen(t, _key.UTF8String, &_params);
 }
 
+- (NSString *)description {
+	return [self url];
+}
 
 @end

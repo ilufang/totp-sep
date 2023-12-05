@@ -13,5 +13,7 @@
 
 + (void)appendOTPURL: (NSString *)url;
 
+- (void)regenerateDB;
+
 @end
 

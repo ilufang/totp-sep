@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) ObjTOTP *totp;
 
 - (void)refresh;
+- (void)onSelect;
 
 @end
 
