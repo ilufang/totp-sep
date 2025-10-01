@@ -178,11 +178,15 @@ static CodeListViewController *_inst;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillMoveToBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
 	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillMoveToForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
+
 	// Unlock DB on start
 	_unlocked = NO;
+	/*
 	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1), dispatch_get_main_queue(), ^{
 		[self lockBtnClick];
 	});
+	 */
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -314,6 +318,13 @@ static CodeListViewController *_inst;
 	}
 	*/
 	self.unlocked = NO;
+}
+
+- (void)appWillMoveToForeground:(NSNotification *) notification {
+	if (!_unlocked) {
+		_db = [self readDB];
+		[self loadDB:_db];
+	}
 }
 
 + (void)appendOTPURL:(NSString *)url {
